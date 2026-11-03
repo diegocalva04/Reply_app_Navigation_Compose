@@ -34,3 +34,6 @@ proguard-project.txt
 # Android Studio/IDEA
 *.iml
 .idea
+
+# Herramientas temporales y renderizados de verificación
+.codex-work/
