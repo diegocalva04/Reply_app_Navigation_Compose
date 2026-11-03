@@ -40,14 +40,14 @@ https://github.com/diegocalva04/Reply_app_Navigation_Compose
 
 La publicación inicial se verificó mediante git push y la API autenticada de GitHub, que devolvió `private: true`, rama `main` y el commit de implementación `8ed5086adfa6ce0dd2faa7f511b602573b818132`. La documentación y las evidencias se publican en una etapa posterior. `evidencias/github_verificado.json` conserva los metadatos de publicación. No se incluyen credenciales, local.properties, .idea, cachés o el respaldo previo.
 
-## Evidencias disponibles y comprobaciones pendientes
+## Evidencias disponibles y alcance de verificación
 
 - Seis capturas directas del emulador: inicio, sabor, retiro, resumen, Sharesheet y AppBar. Son capturas originales; no se generaron ni reconstruyeron interfaces.
-- Una captura de Android Studio obtenida durante la sincronización. Acredita el proyecto abierto; **no acredita el árbol de paquetes expandido**.
-- El historial se entrega como registro Git auténtico y la publicación como metadatos remotos verificados; **no se dispone todavía de sus capturas visuales**.
-- La herramienta de control visual de Windows detuvo la sesión al intentar usar Firefox, por falta de soporte de control de URLs en ese navegador. No se continuó la automatización visual después de ese bloqueo.
-- Pendientes de evidencia visual: estructura de paquetes expandida en Android Studio, historial Git en pantalla y página del repositorio de GitHub. No se sustituyeron por imágenes fabricadas.
-- Las funciones @Preview compilan, pero no se verificó su render en el panel Preview de Android Studio.
+- Se completó la captura del árbol de paquetes expandido y de las cuatro rutas en Android Studio: `01_estructura.jpg`. La captura anterior de sincronización se conserva como evidencia complementaria.
+- Se capturó el panel Git de Android Studio, filtrado por HEAD, con los catorce commits anteriores al cierre de evidencias y la descripción técnica en español de un commit: `08_historial_git.jpg`.
+- La captura auténtica de GitHub adjuntada por el usuario se conservó sin modificaciones en `09_github.png`. Muestra la visibilidad privada, main, los archivos publicados y catorce commits. Su SHA-256 coincide con el archivo adjunto original. La publicación también se verificó mediante la API remota.
+- Quedaron cubiertas las nueve evidencias visuales solicitadas. La interrupción previa del control de Firefox no afectó a la captura posterior de Android Studio ni a la incorporación de la evidencia de GitHub aportada por el usuario.
+- Se verificó visualmente el render de las tres funciones originales `StartOrderPreview`, `SelectOptionPreview` y `OrderSummaryPreview` en Android Studio. Las tres mostraron **Up-to-date**. Las capturas complementarias `10_preview_inicio.jpg`, `11_preview_opciones.jpg` y `12_preview_resumen.jpg` conservan esa comprobación. Se mantuvieron los datos de ejemplo originales y la presentación del panel con límites de diseño; esas vistas previas no sustituyen las pruebas ejecutadas en el emulador.
 - Las pruebas cubren el dispositivo, la orientación y los escenarios registrados. No se ejecutaron pruebas exhaustivas sobre todas las versiones, pantallas, recreación de proceso o dispositivos físicos.
 
 El informe utiliza la plantilla p.docx original con portada, encabezados, logotipos, marca de agua, numeración, márgenes y estilos. Se preservaron Calva Diego, Ingeniería de Software y «- / -» para docente/materia. Se actualizó la fecha y el contenido, y se verificó su paginación mediante exportación de Word a PDF y revisión de las imágenes de cada página.

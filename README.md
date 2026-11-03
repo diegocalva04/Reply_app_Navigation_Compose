@@ -54,6 +54,7 @@ El script requiere Python 3, `adb` en PATH, un emulador iniciado y la interfaz o
 - APK instalado y ejecutado en **Reply_Tablet_API_35**, Android 15/API 35.
 - **23 comprobaciones satisfactorias** en `evidencias/validacion.json`: cantidades, precios, selección obligatoria, recorrido, recargo, conservación de datos, Up, Atrás, cancelación desde los tres destinos y Sharesheet.
 - Comparación con `upstream/navigation`: navegación equivalente; modelos, ViewModel, datos y componente de precios intactos.
+- Nueve evidencias visuales solicitadas completadas y tres capturas complementarias de las vistas previas originales, renderizadas con estado **Up-to-date** en Android Studio. La captura de GitHub fue aportada por el usuario y se conserva sin modificaciones.
 - Historial real en español, publicado en [GitHub privado](https://github.com/diegocalva04/Reply_app_Navigation_Compose).
 
 ### Particularidad del ejemplo oficial
@@ -62,6 +63,6 @@ En `SummaryScreen.kt`, el cuarto argumento de `order_details` es `orderUiState.q
 
 ## Documentación y licencia
 
-El informe utiliza la plantilla institucional suministrada y preserva portada, logotipos, marca de agua, márgenes y estilos. Docente y materia permanecen como en la plantilla (`- / -`). El alcance de evidencias y las verificaciones pendientes se especifican en `docs/validacion.md`.
+El informe utiliza la plantilla institucional suministrada y preserva portada, logotipos, marca de agua, márgenes y estilos. Docente y materia permanecen como en la plantilla (`- / -`). El alcance de evidencias y verificaciones se especifica en `docs/validacion.md`.
 
 La base oficial conserva su licencia [Apache 2.0](LICENSE) y los avisos de copyright de Google/Android Open Source Project.

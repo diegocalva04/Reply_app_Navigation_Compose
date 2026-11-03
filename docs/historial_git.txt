@@ -36,3 +36,8 @@ CupcakeScreen asocia cada destino con su título @StringRes. CupcakeApp observa 
 
 8ed5086 fix: alinear modificadores con la solución oficial de navegación
 La comparación con upstream/navigation confirma coincidencia funcional en rutas, callbacks, ViewModel, cancelación e intents. Se incorporan los modificadores oficiales fillMaxSize, verticalScroll y fillMaxWidth en los botones de cantidad. Se mantienen intactos OrderViewModel, OrderUiState, DataSource y CommonUi.
+
+35a05ee docs: documentar práctica de navegación en Jetpack Compose
+Se incorpora el análisis de los nueve apartados del codelab, README en español, historial técnico y registro de compilación y lint. Se añaden las siete capturas auténticas disponibles, resultados de 23 comprobaciones ejecutadas en Android 15 y el script reproducible de validación por adb.
+
+Se entrega el informe institucional de once páginas basado en p.docx, con portada, logotipos, marca de agua, estilos, índice y numeración preservados. Se revisó cada página renderizada y se corrigieron saltos vacíos y el ancho de la tabla. Se documentan explícitamente el campo Total heredado de la solución oficial y las capturas visuales pendientes tras el bloqueo de control de Firefox.

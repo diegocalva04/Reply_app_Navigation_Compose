@@ -6,6 +6,12 @@
     "origen": "Android Studio mediante herramienta de captura de Windows"
   },
   {
+    "archivo": "01_estructura.jpg",
+    "bytes": 90021,
+    "sha256": "3cebd5c05eab7fd76d2520bfa45d718da1db88f0f7e7d3610c92b2de57361a3a",
+    "origen": "Android Studio mediante herramienta de captura de Windows"
+  },
+  {
     "archivo": "02_inicio.png",
     "bytes": 78326,
     "sha256": "426b794e352da3b3f36e118be041a56cb29b46d8558f83b77fff4fe23774476e",
@@ -40,5 +46,35 @@
     "bytes": 66252,
     "sha256": "0c5f543e7bd356afa60606eeb752e8264fec6b3142e43b0e615bee4ebce978cd",
     "origen": "Captura directa del emulador mediante adb exec-out screencap -p"
+  },
+  {
+    "archivo": "08_historial_git.jpg",
+    "bytes": 152249,
+    "sha256": "96b218cd55e9f28e906813968be3b0f54a8af4671871cfab834dcc6969443920",
+    "origen": "Android Studio mediante herramienta de captura de Windows"
+  },
+  {
+    "archivo": "09_github.png",
+    "bytes": 236527,
+    "sha256": "efce86edb4b03550284f8ce66f9b0f849dd4005c55972b4a0a38d40d6517e3e9",
+    "origen": "Captura de GitHub adjuntada por el usuario el 3 de noviembre de 2026, conservada sin modificaciones"
+  },
+  {
+    "archivo": "10_preview_inicio.jpg",
+    "bytes": 115621,
+    "sha256": "aa13e159c537d803b589b96439256f003e0cc4f7cdc29c44ca6a9a36dd015b89",
+    "origen": "Android Studio mediante herramienta de captura de Windows"
+  },
+  {
+    "archivo": "11_preview_opciones.jpg",
+    "bytes": 107358,
+    "sha256": "3faa4c57c2e4b4aef2f99e896866e87694cfd55592ece9b8858cf101bb7ac64b",
+    "origen": "Android Studio mediante herramienta de captura de Windows"
+  },
+  {
+    "archivo": "12_preview_resumen.jpg",
+    "bytes": 108381,
+    "sha256": "76c34fa106f68975bf32fe1e56ba80365eca98a2d2601394dd6836d896fc908f",
+    "origen": "Android Studio mediante herramienta de captura de Windows"
   }
 ]
