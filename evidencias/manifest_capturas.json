@@ -1,0 +1,44 @@
+[
+  {
+    "archivo": "01_android_studio.jpg",
+    "bytes": 47762,
+    "sha256": "0ed2dcc021a4148e77c5166fb80cc9023dff23f04a560e769fa95bf6f5cae24f",
+    "origen": "Android Studio mediante herramienta de captura de Windows"
+  },
+  {
+    "archivo": "02_inicio.png",
+    "bytes": 78326,
+    "sha256": "426b794e352da3b3f36e118be041a56cb29b46d8558f83b77fff4fe23774476e",
+    "origen": "Captura directa del emulador mediante adb exec-out screencap -p"
+  },
+  {
+    "archivo": "03_sabor.png",
+    "bytes": 66252,
+    "sha256": "0c5f543e7bd356afa60606eeb752e8264fec6b3142e43b0e615bee4ebce978cd",
+    "origen": "Captura directa del emulador mediante adb exec-out screencap -p"
+  },
+  {
+    "archivo": "04_retiro.png",
+    "bytes": 64866,
+    "sha256": "d8f86972fd0c4cca605abf4d0a03436f206781c33c09a5ec2dda7185fb599370",
+    "origen": "Captura directa del emulador mediante adb exec-out screencap -p"
+  },
+  {
+    "archivo": "05_resumen.png",
+    "bytes": 68580,
+    "sha256": "4ccfb8decc077d9105d1570fc5be850041ee71174cd15aa052242185b9f8382d",
+    "origen": "Captura directa del emulador mediante adb exec-out screencap -p"
+  },
+  {
+    "archivo": "06_compartir.png",
+    "bytes": 122171,
+    "sha256": "bf724c358cd1f9ff486568a10b0a78ca49097e68a6c73c4556cf95cd04a9baa2",
+    "origen": "Captura directa del emulador mediante adb exec-out screencap -p"
+  },
+  {
+    "archivo": "07_appbar.png",
+    "bytes": 66252,
+    "sha256": "0c5f543e7bd356afa60606eeb752e8264fec6b3142e43b0e615bee4ebce978cd",
+    "origen": "Captura directa del emulador mediante adb exec-out screencap -p"
+  }
+]

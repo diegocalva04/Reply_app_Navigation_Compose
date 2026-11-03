@@ -1,0 +1,38 @@
+b98c20e chore: preparar proyecto base de Cupcake para la práctica de Navigation Compose
+Se importa el código oficial de la rama starter conservando el paquete com.example.cupcake, los recursos, las pantallas y el modelo del pedido. Se conserva la licencia Apache 2.0 y la dependencia Navigation Compose 2.7.4 incluida por Google. El proyecto anterior queda respaldado fuera del repositorio.
+
+ab7394a chore: configurar Reply_app y nombre visible Reply App
+Se ajusta exclusivamente la identidad solicitada: rootProject.name y app_name. Se retira la configuración residual del proyecto previo que exigía Java 25, incompatible con Gradle 8.4; la práctica conserva las versiones oficiales y se compila con JDK 17. Se excluyen herramientas temporales de verificación.
+
+8911826 feat: definir rutas de navegación para las cuatro pantallas de Cupcake
+Se incorpora CupcakeScreen con Start para cantidades, Flavor para sabores, Pickup para retiro y Summary para el resumen. La propiedad name de cada destino identifica las rutas de Navigation Compose, de acuerdo con el apartado 4 del codelab.
+
+9abf72d feat: configurar NavHostController y destinos de navegación en CupcakeApp
+Se utiliza rememberNavController y se configura NavHost con Start como destino inicial y el padding de Scaffold. Los cuatro composable vinculan las pantallas originales con quantityOptions, sabores resueltos desde recursos, fechas y estado del pedido. Las selecciones actualizan OrderViewModel.
+
+1910f28 feat: introducir callback de continuación en StartOrderScreen
+Se agrega inicialmente onNextButtonClicked de tipo () -> Unit y se conecta con los botones de cantidad. Se actualizan CupcakeApp y StartOrderPreview con lambdas vacías, siguiendo el paso introductorio del apartado 5 antes de transmitir la cantidad.
+
+2ff08f2 feat: conectar selección de cantidad con eventos de StartOrderScreen
+Se evoluciona el callback a (Int) -> Unit. Cada SelectQuantityButton comunica item.second y conserva item.first como recurso del texto, de modo que las opciones oficiales 1, 6 y 12 pueden actualizar el pedido desde CupcakeApp. La vista previa conserva su callback.
+
+60cde90 feat: incorporar eventos de continuación y cancelación en SelectOptionScreen
+Se incorporan callbacks () -> Unit con lambdas vacías predeterminadas y se conectan a Cancel y Next. Se conserva selectedValue mediante rememberSaveable, la selección por RadioButton y enabled = selectedValue.isNotEmpty(), sin alterar los estilos ni la vista previa.
+
+308e655 feat: implementar eventos de envío y cancelación en resumen del pedido
+OrderSummaryScreen recibe onCancelButtonClicked y onSendButtonClicked. El botón Send transmite newOrder y orderSummary mediante (String, String) -> Unit; Cancel ejecuta su callback. Se actualizan CupcakeApp y OrderSummaryPreview sin cambiar la presentación original.
+
+f351f31 feat: implementar navegación secuencial entre cantidad sabor retiro y resumen
+Start actualiza la cantidad con setQuantity antes de navegar a Flavor. Next avanza de Flavor a Pickup y de Pickup a Summary mediante navigate y los nombres de CupcakeScreen. La navegación permanece centralizada en CupcakeApp y las pantallas reciben únicamente callbacks y datos del ViewModel.
+
+8782110 feat: implementar cancelación de pedidos y limpieza de pila de navegación
+Se agrega cancelOrderAndNavigateToStart y se conecta con Cancel en Flavor, Pickup y Summary. resetOrder elimina las selecciones del ViewModel y popBackStack vuelve a Start con inclusive = false para conservar el destino inicial y quitar las pantallas intermedias.
+
+c340796 feat: incorporar envío de pedidos mediante Intent ACTION_SEND
+Se incorpora shareOrder con Context, asunto y resumen. El intent declara text/plain y los extras EXTRA_SUBJECT y EXTRA_TEXT; Intent.createChooser abre Android Sharesheet mediante startActivity. Summary obtiene LocalContext.current y transmite los datos del callback, sin implementar servicios externos.
+
+f94bda8 feat: configurar AppBar dinámica con títulos y navegación de retroceso
+CupcakeScreen asocia cada destino con su título @StringRes. CupcakeApp observa currentBackStackEntryAsState y obtiene currentScreen mediante valueOf con Start como valor inicial. La AppBar muestra el título actual, habilita Up cuando previousBackStackEntry existe y ejecuta navigateUp sin restablecer el pedido.
+
+8ed5086 fix: alinear modificadores con la solución oficial de navegación
+La comparación con upstream/navigation confirma coincidencia funcional en rutas, callbacks, ViewModel, cancelación e intents. Se incorporan los modificadores oficiales fillMaxSize, verticalScroll y fillMaxWidth en los botones de cantidad. Se mantienen intactos OrderViewModel, OrderUiState, DataSource y CommonUi.

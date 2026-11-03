@@ -1,0 +1,120 @@
+{
+  "dispositivo": "emulator-5554",
+  "pruebas": [
+    {
+      "prueba": "Inicio sin botón Up",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cantidad: One Cupcake",
+      "resultado": "CORRECTO",
+      "detalle": "Subtotal $2.00"
+    },
+    {
+      "prueba": "Next deshabilitado sin sabor: One Cupcake",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cancelar desde Flavor: One Cupcake",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cantidad: Six Cupcakes",
+      "resultado": "CORRECTO",
+      "detalle": "Subtotal $12.00"
+    },
+    {
+      "prueba": "Next deshabilitado sin sabor: Six Cupcakes",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cancelar desde Flavor: Six Cupcakes",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cantidad: Twelve Cupcakes",
+      "resultado": "CORRECTO",
+      "detalle": "Subtotal $24.00"
+    },
+    {
+      "prueba": "Next deshabilitado sin sabor: Twelve Cupcakes",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cancelar desde Flavor: Twelve Cupcakes",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Next habilitado al elegir sabor",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Next deshabilitado sin fecha",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cuatro fechas de retiro",
+      "resultado": "CORRECTO",
+      "detalle": "['Tue Nov 3', 'Wed Nov 4', 'Thu Nov 5', 'Fri Nov 6']"
+    },
+    {
+      "prueba": "Recargo por retiro hoy",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Retiro posterior sin recargo",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Resumen conserva cantidad sabor fecha y precio",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Up vuelve a Pickup conservando selección",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Atrás del sistema vuelve a Flavor",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cancelar desde Pickup limpia pila",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Nuevo pedido sin sabor anterior ni precio residual",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Cancelar desde Summary limpia pila",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    },
+    {
+      "prueba": "Android Sharesheet abierto",
+      "resultado": "CORRECTO",
+      "detalle": "{'com.android.intentresolver'}"
+    },
+    {
+      "prueba": "Regreso desde Sharesheet mantiene resumen",
+      "resultado": "CORRECTO",
+      "detalle": ""
+    }
+  ]
+}
